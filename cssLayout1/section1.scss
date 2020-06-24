@@ -1,0 +1,304 @@
+%animation-default {
+    opacity: 1 !important;
+    z-index: 3;
+}
+
+@mixin carousel($items, $animation: 'default') {
+    .carousel {
+        width: 100%;
+        position: relative;
+        margin-top: 45px;
+
+        @media (max-width: $break-point-divice) {
+            overflow: hidden;
+        }
+
+        >input[type="radio"] {
+            position: absolute;
+            left: 0;
+            opacity: 0;
+            top: 0;
+
+            &:checked {
+
+                ~.carousel__items .carousel__item,
+                ~.carousel__prev>label,
+                ~.carousel__next>label {
+                    opacity: 0;
+                }
+            }
+
+            @for $i from 1 through $items {
+                &:nth-child(#{$i}) {
+                    &:checked {
+                        ~.carousel__items .carousel__item {
+                            @if $animation=='default' {
+                                &:nth-child(#{$i}) {
+                                    opacity: 1;
+                                }
+                            }
+                        }
+
+                        ~.carousel__prev {
+                            >label {
+                                @if $i==1 {
+                                    &:nth-child(#{$items}) {
+                                        @extend %animation-default;
+                                    }
+                                }
+
+                                @else if $i==$items {
+                                    &:nth-child(#{$items - 1}) {
+                                        @extend %animation-default;
+                                    }
+                                }
+
+                                @else {
+                                    &:nth-child(#{$i - 1}) {
+                                        @extend %animation-default;
+                                    }
+                                }
+                            }
+                        }
+
+                        ~.carousel__next {
+                            >label {
+                                @if $i==$items {
+                                    &:nth-child(1) {
+                                        @extend %animation-default;
+                                    }
+                                }
+
+                                @else {
+                                    &:nth-child(#{$i + 1}) {
+                                        @extend %animation-default;
+                                    }
+                                }
+                            }
+                        }
+
+                        ~.carousel__nav {
+                            background: $pattern-gray;
+                            height: 30px;
+
+                            >label {
+                                &:nth-child(#{$i}) {
+                                    background: $pattern-orange;
+                                    cursor: default;
+                                    pointer-events: none;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        &__items {
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            width: 100%;
+            height: 428px;
+            position: relative;
+        }
+
+        &__item {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            transition: opacity 2s;
+            -webkit-transition: opacity 2s;
+
+            img {
+                width: 100%;
+                vertical-align: middle;
+            }
+        }
+
+        &__prev,
+        &__next {
+            >label {
+                border: 1px solid $pattern-orange;
+                border-radius: 0%;
+                background: $pattern-orange;
+                cursor: pointer;
+                display: block;
+                width: 40px;
+                height: 40px;
+                position: absolute;
+                top: 50%;
+                transform: translateY(-50%);
+                -webkit-transform: translateY(-50%);
+                transition: all .3s ease;
+                -webkit-transition: all .3s ease;
+                opacity: 1;
+                z-index: 2;
+
+                &:hover,
+                &:focus {
+                    opacity: .5 !important;
+                }
+
+                &:before,
+                &:after {
+                    content: "";
+                    position: absolute;
+                    width: inherit;
+                    height: inherit;
+                }
+
+                &:before {
+                    background: linear-gradient(to top, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%),
+                        linear-gradient(to left, #fff 0%, #fff 10%, rgba(51, 51, 51, 0) 10%);
+                    width: 60%;
+                    height: 60%;
+                    top: 20%;
+                }
+            }
+        }
+
+        &__prev {
+            >label {
+                left: -1.25%;
+
+                &:before {
+                    left: 35%;
+                    top: 20%;
+                    transform: rotate(135deg);
+                    -webkit-transform: rotate(135deg);
+                }
+            }
+        }
+
+        &__next {
+            >label {
+                right: -1.25%;
+
+                &:before {
+                    left: 10%;
+                    transform: rotate(315deg);
+                    -webkit-transform: rotate(315deg);
+                }
+            }
+        }
+
+        &__nav {
+            padding: 5px;
+            bottom: 0;
+            left: 0;
+            text-align: center;
+            width: 100%;
+            z-index: 3;
+
+            >label {
+                background: $pattern-dark-gray;
+                display: inline-block;
+                border-radius: 3%;
+                cursor: pointer;
+                margin: 0 .125%;
+                width: 70px;
+                height: 5px;
+            }
+        }
+    }
+}
+
+.carrosel-section {
+    width: 100%;
+    height: 428px;
+    background-color: $pattern-turquoise;
+    color: white;
+    font-family: $pattern-font;
+}
+
+.carrosel-section-flex-2 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+
+    .img-carrousel {
+        display: flex;
+        align-items: center;
+        flex-basis: 2;
+        height: 428px;
+        width: 100%;
+
+        @media (max-width: $first-break-point) {
+            width: 120%;
+        }
+
+        @media (max-width: $second-break-point) {
+            width: 200%;
+        }
+
+        @media (max-width: $forth-break-point) {
+            width: 250%;
+        }
+    }
+
+    h1 {
+        margin-top: 3vw;
+        font-size: 50px;
+        width: 50%;
+
+        @media (max-width: $second-break-point) {
+            width: 100%;
+        }
+
+        @media (max-width: $break-point-divice) {
+            font-size: 30px;
+            width: 80%;
+        }
+
+        @media (min-width: $break-point-4k) {
+            margin-top: 40px;
+        }
+    }
+
+    p {
+        margin-top: 2vw;
+        font-size: 15px;
+        width: 45%;
+
+        @media (max-width: $break-point-divice) {
+            font-size: 11px;
+            width: 60%;
+        }
+
+        @media (min-width: $break-point-4k) {
+            margin-top: 30px;
+        }
+    }
+}
+
+.carrosel-section2-link {
+    margin-top: 1.5vw;
+
+    @media (min-width: $break-point-4k) {
+        margin-top: 20px;
+    }
+
+    a {
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        font-family: $pattern-font;
+
+        @media (max-width: $break-point-divice) {
+            font-size: 15px;
+        }
+    }
+}
+
+.carousel:nth-child(1){
+    background: red;
+}
+
+
+
+@include carousel(3);
