@@ -295,10 +295,8 @@
     }
 }
 
-.carousel:nth-child(1){
-    background: red;
+.diferent-color{
+    background:#2944df;
 }
-
-
 
 @include carousel(3);
