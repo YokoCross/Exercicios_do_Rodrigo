@@ -1,0 +1,31 @@
+.section-main {
+    display: flex;
+    justify-content: space-between;
+    font-family: 'Montserrat', sans-serif;
+
+    article {
+        width: 22%;
+    }
+
+    h3 {
+        margin-top: 1rem;
+        font-size: 1.5rem;
+        color: $pattern-light-gray;
+    }
+
+    h4{
+        font-size: .8rem;
+        font-weight: bold;
+        padding-left: .5rem;
+    }
+
+    p {
+        overflow: hidden;
+        height: 5rem;
+        font-size: .7rem;
+        line-height: 1rem;
+        margin: 2rem 0;
+        color: $pattern-light-gray;
+        text-justify: distribute-all-lines;
+    }
+}

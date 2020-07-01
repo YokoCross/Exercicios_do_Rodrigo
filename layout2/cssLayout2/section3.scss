@@ -1,0 +1,72 @@
+.section3-images {
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+
+    figure {
+        margin-top: 1rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        overflow: hidden;
+        width: 31%;
+    }
+
+    img {
+        height: 50%;
+        align-items: center;
+        margin: 0 auto;
+        height: 140px;
+    }
+
+    h5{
+        font-size: .8rem;
+        text-align: center;        
+        color: rgba($color: #FFF, $alpha: .7);
+    }
+
+    .section3-images-text {
+        height: 3rem;
+        margin: .3rem 0;
+        font-size: .5rem;
+        color: rgba($color: #FFF, $alpha: .7);
+        text-justify: distribute-all-lines;
+        text-align: center;
+    }
+}
+
+.section3-images-icons-flex{
+    display: flex;
+    justify-content: space-around;
+
+    .flex{
+        display: flex; 
+    }
+}
+
+.section3-images-repositioning{
+    position: relative;
+    top: -120px;
+}
+
+.icon-chain {
+    width: 40px;
+    height: 40px;
+    background: $pattern-orange;
+    border-radius: 50%;
+    background-image: url("../img/chain.svg");
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+.icon-magnifying {
+    width: 40px;
+    height: 40px;
+    background: $pattern-dark-gray;
+    border-radius: 50%;
+    background-image: url("../img/Magnifying_glass_icon.svg");
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}

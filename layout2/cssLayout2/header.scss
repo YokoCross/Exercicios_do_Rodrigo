@@ -1,0 +1,38 @@
+.main-header {
+    background: $pattern-gray;
+    height: 72px;
+    overflow: hidden;
+}
+
+.flex-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.nav-header {
+    width: 50%;
+
+    ul {
+        display: flex;
+        justify-content: space-between;
+        height: 72px;
+        align-items: center;
+    }
+
+    a {
+        color: white;
+        text-decoration: none;
+        font-family: $pattern-font-family;
+    }
+
+    .nav-checked {
+        display: flex;
+        align-items: center;
+        background: $pattern-dark-gray;
+        padding: 0 20px;
+        height: 70px;
+        @include orange-top-boder;
+    }
+}

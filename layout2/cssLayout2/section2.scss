@@ -1,0 +1,37 @@
+.icon-article-flex{
+    display: flex;
+    align-items: center;    
+}
+
+.icon-cart {
+    width: 50px;
+    height: 50px;
+    background: $pattern-dark-gray;
+    border-radius: 50%;
+    background-image: url("../img/shopping-basket.svg");
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;        
+}
+
+.icon-rocket{
+    width: 50px;
+    height: 50px;
+    background: $pattern-dark-gray;
+    border-radius: 50%;
+    background-image: url("../img/rocket.svg");
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
+
+.icon-monitor{
+    width: 50px;
+    height: 50px;
+    background: $pattern-orange;
+    border-radius: 50%;
+    background-image: url("../img/computer-monitor.svg");
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+}
