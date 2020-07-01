@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+	<defs>
+		<image width="200" height="200" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADIAQMAAACXljzdAAAAAXNSR0IB2cksfwAAAANQTFRF/2Y9ci2JBwAAABxJREFUeJztwYEAAAAAw6D5U1/hAFUBAAAAAHwGFFAAAdqgEPkAAAAASUVORK5CYII="/>
+		<image width="200" height="200" id="img2" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMgAAADIAQMAAACXljzdAAAAAXNSR0IB2cksfwAAAAZQTFRFAAAA////pdmf3QAAAAJ0Uk5TAP9bkSK1AAAAm0lEQVR4nO3UMQ6AIAwFUA0DI0fgKBwNj+ZRPIKjg7FiUAftj5HBGP1/5KXpQNuqYphjjIhMqsQkokEtSCwUDyUiyW00MVAsFAfFQwlQIhS5LzUUUyC2QFyB+IckPCvKLqyfPQBpzu9Z8FqNUJQml9JT/i3bUJ8HK+5yHEYKhXIlYRflZC9lr7wHFAqFQqHckk6VAMUnaVVhPp8ZCYHVo3/K8UcAAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+		tspan { white-space:pre }
+	</style>
+	<use id="Layer 1" href="#img1" x="0" y="0" />
+	<use id="Layer 3" href="#img2" x="0" y="0" />
+</svg>

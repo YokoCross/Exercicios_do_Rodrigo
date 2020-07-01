@@ -1,20 +1,22 @@
-.section1-principal-img{
+.section1-principal-img {
     height: 419px;
     overflow: hidden;
     display: flex;
     align-items: center;
-    img{
-        width: 100%;                
+
+    img {
+        width: 100%;
     }
 }
 
-.section1-title{
+.section1-title {
     display: flex;
     align-items: center;
     justify-content: space-around;
     height: 367px;
     color: rgba($color: #FFF, $alpha: .8);
-    h2{
+
+    h2 {
         font-size: 2.5rem;
         padding: 20px 0;
         margin: 0 auto;
@@ -22,7 +24,7 @@
         text-align: center;
     }
 
-    h1{
+    h1 {
         font-size: 3.5rem;
         width: 27rem;
         padding: 20px 0;
@@ -33,3 +35,6 @@
     }
 }
 
+.section1-article {
+    width: 22%;
+}

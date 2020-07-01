@@ -1,0 +1,137 @@
+.section4-blogs{
+    width: 48%;
+    margin-bottom: 70px;
+}
+
+.section4-testemunials{
+    width: 48%;
+    margin-bottom: 70px;
+}
+
+.section4-blogs-flex {
+    margin-top: 2rem;
+}
+
+.section4-blog {
+    display: flex;
+    align-items: center;
+
+    .section4-text {
+        font-size: .7rem;
+        line-height: 1rem;
+        margin: 0 0;
+        color: $pattern-gray;
+        text-justify: distribute;
+        padding-left: .5rem;
+    }
+}
+
+.section4-titles {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section4-img1 {
+    width: 68px;
+    height: 68px;
+    background-image: url("../img/devices.jpg");
+    background-position: center;
+    background-size: 115px;
+    background-repeat: no-repeat;
+}
+
+.section4-img2 {
+    width: 68px;
+    height: 68px;
+    background-image: url("../img/no.jpg");
+    background-position: center;
+    background-size: 70px;
+    background-repeat: no-repeat;
+}
+
+.section4-link {
+    color: $pattern-dark-gray;
+    font-size: .7rem;
+    padding-left: .5rem;
+
+    &:hover{
+        color: $pattern-orange;
+    }
+}
+
+.section4-testemunials-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section4-testimonial {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+
+    .section4-testimonial-text {
+        overflow: hidden;
+        font-size: .7rem;
+        text-align: center;
+        margin: 1rem 0;
+        color: $pattern-gray;
+    }
+}
+
+.section4-first-quote {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/quote.svg");
+    transform: rotate(180deg);
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    margin-top: 2rem
+}
+
+.section4-second-quote {
+    width: 30px;
+    height: 30px;
+    background-image: url("../img/quote.svg");
+    background-position: center;
+    background-size: 20px;
+    background-repeat: no-repeat;
+}
+
+.section4-jane-doe{
+    display: flex;
+    align-items: center;
+    background: rgb(241, 240, 240);
+    width: 100%;
+}
+
+.jane-doe-name{
+    font-size: .6rem;
+    color: $pattern-gray;
+    font-weight: bold;
+}
+
+.jane-doe-job{
+    font-size: .5rem;
+    color: $pattern-gray;
+}
+
+.jane-doe-1{
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/jane-doe1.jpg");
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    margin: 5px;
+}
+.jane-doe-2{
+    width: 40px;
+    height: 40px;
+    background-image: url("../img/jane-doe2.jpg");
+    background-position: center;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    margin: 5px;
+}

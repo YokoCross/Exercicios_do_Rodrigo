@@ -1,0 +1,151 @@
+.main-footer {
+    background: $pattern-gray;
+}
+
+.footer-social-media {
+    display: flex;
+    justify-content: space-between;
+
+    h3 {
+        font-family: $pattern-font-family;
+        font-weight: bold;
+        color: white;
+        padding-bottom: 2rem;
+    }
+
+    p {
+        color: white;
+        font-size: .7rem;
+        line-height: 1rem;
+        font-family: $pattern-font-family;
+    }
+    .twitter-time{
+        color: $pattern-light-gray;
+    }
+}
+
+.footer-social-media-icons {
+    display: flex;
+    margin-top: 5px;
+
+}
+
+.footer-social-media-item {
+    width: 24%;
+    padding-top: 2rem;
+}
+
+.icon-twitter {
+    width: 30px;
+    height: 30px;
+    background: $pattern-orange;
+    background-image: url("../img/icon-twitter.svg");
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.icon-flickr {
+    width: 30px;
+    height: 30px;
+    background: $pattern-orange;
+    background-image: url("../img/icon-flickr.svg");
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.icon-facebook {
+    width: 30px;
+    height: 30px;
+    background: $pattern-orange;
+    background-image: url("../img/icon-facebook.svg");
+    background-position: center;
+    background-size: 25px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.twitter-link {
+    color: $pattern-orange;
+    font-size: .7rem;
+    line-height: 1rem;
+}
+
+.twitter-link-flex{
+    display: flex;
+}
+
+.flickr-imgs-flex{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.flickr-img-container{
+    width: 19%;
+}
+
+.flickr-img{
+    width: 100%;
+    padding: 1px;
+}
+
+.contact-space{
+    margin-top: 1rem;
+}
+
+.footer-nav-copyright-flex{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-nav-total{
+    width: 30%;   
+}
+
+.footer-nav{
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-size: .7rem;
+    font-family: $pattern-font-family;
+    padding-bottom: 30px;
+
+    a{
+        color: white;
+        text-decoration: none;
+    }
+
+    a:hover{
+        color: $pattern-orange;
+    }
+}
+
+.footer-copyright{
+    color: white;
+    font-size: .7rem;
+
+    a{
+        color: $pattern-orange;
+        text-decoration: none;
+    }
+}
+
+.ball-pointer{
+    width: 30px;
+    height: 30px;
+    background: $pattern-orange;
+    border-radius: 50%;
+    background-image: url("../img/right-arrow.svg");
+    background-position: center;
+    background-size: 13px;
+    background-repeat: no-repeat;
+    transform: rotate(-90deg);
+    cursor: pointer; 
+    margin: 30px auto 0 auto;
+}
