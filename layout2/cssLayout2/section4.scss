@@ -135,3 +135,15 @@
     background-repeat: no-repeat;
     margin: 5px;
 }
+
+@media (max-width:$pattern-break-device){
+    .section4-blogs{
+        width: 95%;
+        overflow: hidden;
+    }
+    
+    .section4-testemunials{
+        width: 95%;        
+        overflow: hidden;
+    }
+}

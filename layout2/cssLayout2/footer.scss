@@ -1,5 +1,10 @@
+footer{
+    max-height: 0px;
+}
+
 .main-footer {
     background: $pattern-gray;
+    overflow: hidden;
 }
 
 .footer-social-media {
@@ -148,4 +153,37 @@
     transform: rotate(-90deg);
     cursor: pointer; 
     margin: 30px auto 0 auto;
+}
+
+@media (max-width:$pattern-break-device){
+    .footer-social-media{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-social-media-item {
+        width: 60%;
+        padding-top: 1.5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .footer-nav-copyright-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-nav-total{
+        width:95%;   
+    }
+
+    .footer-copyright{
+        display: flex;
+        flex-direction: column;
+    
+        a{
+            color: $pattern-orange;
+            text-decoration: none;
+        }
+    }
 }

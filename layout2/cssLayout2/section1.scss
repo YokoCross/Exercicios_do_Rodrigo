@@ -38,3 +38,55 @@
 .section1-article {
     width: 22%;
 }
+
+@media (max-width: $pattern-break-device){
+    .section1-principal-img {
+        height: 400px;
+          
+        img {
+            width: 400%;
+        }
+    }
+
+    .section1-title {
+            
+        h2 {
+            font-size: 1rem;
+            padding: 10px 0;
+        }
+    
+        h1 {
+            font-size: 2rem;
+            text-align: center;
+            width: 20rem;            
+        }
+    }
+
+    .section1-article {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 200px){
+    .section1-principal-img{
+        img {
+            width: 1000%;
+        }  
+    }
+
+    .section1-title {
+            
+        h2 {
+            font-size: 6vw;
+        }
+    
+        h1 {
+            font-size: 12vw;
+            
+            width: 20rem;            
+        }
+    }
+}

@@ -35,3 +35,11 @@
     background-size: 25px;
     background-repeat: no-repeat;  
 }
+
+@media (max-width:$pattern-break-device) {
+    .icon-article-flex{
+        margin-top: 20px;
+        width: 160px;
+        overflow: hidden;
+    }
+}

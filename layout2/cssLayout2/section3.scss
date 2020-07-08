@@ -18,12 +18,12 @@
         align-items: center;
         margin: 0 auto;
         height: 140px;
-        
+
     }
 
-    h5{
+    h5 {
         font-size: .8rem;
-        text-align: center;        
+        text-align: center;
         color: rgba($color: #FFF, $alpha: .7);
     }
 
@@ -37,16 +37,16 @@
     }
 }
 
-.section3-images-icons-flex{
+.section3-images-icons-flex {
     display: flex;
     justify-content: space-around;
 
-    .flex{
-        display: flex; 
+    .flex {
+        display: flex;
     }
 }
 
-.section3-images-repositioning{
+.section3-images-repositioning {
     position: relative;
     top: -120px;
 }
@@ -75,19 +75,19 @@
     cursor: pointer;
 }
 
-.section3-img3-flex{
+.section3-img3-flex {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
 }
 
-.section3-carrousel-arrows{
+.section3-carrousel-arrows {
     display: flex;
     justify-content: flex-end;
     width: 100%;
 }
 
-.section3-carrosel-left-arrow{
+.section3-carrosel-left-arrow {
     width: 35px;
     height: 35px;
     background: $pattern-dark-gray;
@@ -100,7 +100,7 @@
     margin-top: 30px;
 }
 
-.section3-carrosel-right-arrow{
+.section3-carrosel-right-arrow {
     width: 35px;
     height: 35px;
     background: $pattern-orange;
@@ -108,11 +108,31 @@
     background-position: center;
     background-size: 20px;
     background-repeat: no-repeat;
-    cursor: pointer; 
-    margin-right: 4px;   
+    cursor: pointer;
+    margin-right: 4px;
     margin-top: 30px;
 }
 
-.section3-separator-section4{
+.section3-separator-section4 {
     margin: 10px 0;
+}
+
+@media (max-width:$pattern-break-device) {
+    .section3-images {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+
+        figure {
+            width: 80%;
+        }
+
+        img {
+            width: auto;
+            height: 200px;
+            align-items: center;
+            margin: 0 auto;
+
+        }
+    }
 }
