@@ -11,17 +11,19 @@
 <body>
 
     <header class="main-header">
-
+        <h1 class="display-none">Fence</h1>
         <div class="container">
             <div class="flex-header">
                 <div class="header-imgs">
                     <img src="./img/logo.png" alt="Logo do Site">
                     <img src="./img/taglink.png" alt="TagLink do Site">
                 </div>
-
+                
                 <nav class="nav-header">
-                    <ul>
-                        <Li class="nav-checked"><a href="#">HOME</a></Li>
+                
+                    <button class="hamburger-icon"><span ></span></button>
+                    <ul class="nav-header-ul">
+                        <Li><a href="#">HOME</a></Li>
                         <Li><a href="#">ABOUT US</a></Li>
                         <Li><a href="#">PORTFOLIO</a></Li>
                         <Li><a href="#">BLOG</a></Li>
@@ -45,11 +47,10 @@
         <div class="global-overlay">
 
             <section class="section1-title">
-                <div>
-                    <h2><strong>Hello</strong>, We Are</p>
-                        <h1><strong>FANCE DESIGN</strong></h1>
-                        <h2>And <strong>Trust Us</strong>, You Want To <strong>Hire Us.</strong></p>
-                </div>
+                <p class="section1-sub-words"><strong class="font-bold">Hello</strong>, We Are
+                    <br><em class="font-bold section1-principal-words">FANCE DESIGN</em>
+                    <br>And <strong class="font-bold">Trust Us</strong>, You Want To <strong class="font-bold">Hire
+                        Us.</strong></p>
             </section>
 
             <div class="container global-background-articles">
@@ -59,8 +60,9 @@
 
                     <section class="section-main">
                         <article class='section1-article'>
-                            <h3>SERVICES</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis ipsa
+                            <h2>SERVICES</h2>
+                            <p class="section-main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Excepturi blanditiis ipsa
                                 maiores
                                 facilis dolores, mollitia modi doloribus voluptates error</p>
                             <div class="global-pattern-button"><a href="#">View More</a></div>
@@ -68,30 +70,33 @@
                         <article class='section1-article'>
                             <div class="icon-article-flex">
                                 <div class="icon-cart"></div>
-                                <h4>MARKETING</h4>
+                                <h3>MARKETING</h3>
                             </div>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis ipsa
+                            <p class="section-main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Excepturi blanditiis ipsa
                                 maiores
                                 facilis dolores, mollitia modi doloribus voluptates error</p>
                         </article class='section1-article'>
                         <article class='section1-article'>
                             <div class="icon-article-flex">
                                 <div class="icon-rocket"></div>
-                                <h4>DESIGN</h4>
+                                <h3>DESIGN</h3>
                             </div>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis ipsa
+                            <p class="section-main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Excepturi blanditiis ipsa
                                 maiores
                                 facilis dolores, mollitia modi doloribus voluptates error</p>
                         </article class='section1-article'>
                         <article class='section1-article'>
                             <div class="icon-article-flex">
                                 <div class="icon-monitor"></div>
-                                <h4>DEVELOPMENT</h4>
+                                <h3>DEVELOPMENT</h3>
                             </div>
 
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis ipsa
+                            <p class="section-main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Excepturi blanditiis ipsa
                                 maiores
                                 facilis dolores, mollitia modi doloribus voluptates error</p>
                         </article class='section1-article'>
@@ -101,45 +106,76 @@
 
                     <section class="section-main">
 
-                        <article>
-                            <h3>WORKS</h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi blanditiis ipsa
+                        <article class="section-main-article-spacing">
+                            <h2>WORKS</h2>
+                            <p class="section-main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Excepturi blanditiis ipsa
                                 maiores
                                 facilis dolores, mollitia modi doloribus voluptates error</p>
                             <div class="global-pattern-button"><a href="#">View Portifolio</a></div>
 
                         </article>
 
-                        <div class="section3-images">
+                        <div class="section3-images-and-arrows">
 
-                            <figure>
-                                <img src="./img/img1.jpg" alt="">
-                            </figure>
-
-                            <figure>
-                                <img src="./img/img2.jpg" alt="">
-                                <div class="section3-images-repositioning">
-                                    <h5>Drible Basket Balls</h5>
-                                    <p class="section3-images-text">Lorem ipsum dolor sit amet, consectetur adipisicing
-                                        elit. Accusantium, sed.
-                                        Deserunt adipisci, ullam voluptas</p>
-                                    <div class="section3-images-icons-flex">
-                                        <div class="flex">
-                                            <div class="icon-chain"></div>
-                                            <div class="icon-magnifying"></div>
+                            <div class="section3-images">
+                                <figure class="section3-figure">
+                                    <img class="section3-img" src="./img/img1.jpg" alt="Imagem de Homem de Oculos" id='section3-img1'>
+                                    <div class="section3-images-repositioning display-none" id='section3-img1-link'>
+                                        <p class="section3-ocult-title-link">Drible Basket Balls</p
+                                            class="section3-ocult-title-link">
+                                        <p class="section3-images-text">Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing
+                                            elit. Accusantium, sed.
+                                            Deserunt adipisci, ullam voluptas</p>
+                                        <div class="section3-images-icons-flex">
+                                            <div class="flex">
+                                                <div class="icon-chain"></div>
+                                                <div class="icon-magnifying"></div>
+                                            </div>
                                         </div>
                                     </div>
-                                </div>
-                            </figure>
+                                </figure>
 
-                            <figure class="section3-img3-flex">
-                                <img src="./img/img3.jpg" alt="">
-                                <div class="section3-carrousel-arrows">
-                                    <div class="section3-carrosel-left-arrow"></div>
-                                    <div class="section3-carrosel-right-arrow"></div>
-                                </div>
-
-                            </figure>
+                                <figure class="section3-figure">
+                                    <img class="section3-img" src="./img/img2.jpg" alt="Imagem da banda Daft Punk" id='section3-img2'>
+                                    <div class="section3-images-repositioning display-none" id='section3-img2-link'>
+                                        <p class="section3-ocult-title-link">Drible Basket Balls</p
+                                            class="section3-ocult-title-link">
+                                        <p class="section3-images-text">Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing
+                                            elit. Accusantium, sed.
+                                            Deserunt adipisci, ullam voluptas</p>
+                                        <div class="section3-images-icons-flex">
+                                            <div class="flex">
+                                                <div class="icon-chain"></div>
+                                                <div class="icon-magnifying"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                                <figure class="section3-figure">
+                                    <img class="section3-img" src="./img/img3.jpg" alt="Imagem do Jogo Mass Effect 3" id='section3-img3'>
+                                    <div class="section3-images-repositioning display-none" id='section3-img3-link'>
+                                        <p class="section3-ocult-title-link">Drible Basket Balls</p
+                                            class="section3-ocult-title-link">
+                                        <p class="section3-images-text">Lorem ipsum dolor sit amet, consectetur
+                                            adipisicing
+                                            elit. Accusantium, sed.
+                                            Deserunt adipisci, ullam voluptas</p>
+                                        <div class="section3-images-icons-flex">
+                                            <div class="flex">
+                                                <div class="icon-chain"></div>
+                                                <div class="icon-magnifying"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </figure>
+                            </div>
+                            <div class="section3-carrousel-arrows">
+                                <div class="section3-carrosel-left-arrow"></div>
+                                <div class="section3-carrosel-right-arrow"></div>
+                            </div>
 
                         </div>
 
@@ -149,7 +185,7 @@
 
                     <section class="section-main">
                         <div class="section4-blogs">
-                            <h3>BLOG</h3>
+                            <h2>BLOG</h2>
                             <div class="section4-blogs-flex">
                                 <article class="section4-blog">
                                     <div>
@@ -157,10 +193,12 @@
                                     </div>
                                     <div>
                                         <div class="section4-titles">
-                                            <h4>LOREM IPSUM TITLE</h4>
-                                            <h6><em>By: John Doe</em></h6>
-                                            <h6><em>17.12.2012</em></h6>
-                                            <h6><em>3 comments</em></h6>
+                                            <h3>LOREM IPSUM TITLE</h3>
+                                            <div class="section4-titles-info">
+                                                <p class="section4-blog-data">By: John Doe</p>
+                                                <p class="section4-blog-data">17.12.2012</p>
+                                                <p class="section4-blog-data">3 comments</p>
+                                            </div>
                                         </div>
                                         <p class="section4-text">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elitefa Quasi officia cum alias,
@@ -178,10 +216,13 @@
 
                                     <div>
                                         <div class="section4-titles">
-                                            <h4>LOREM IPSUM TITLE</h4>
-                                            <h6><em>By: John Doe</em></h6>
-                                            <h6><em>17.12.2012</em></h6>
-                                            <h6><em>3 comments</em></h6>
+                                            <h3>LOREM IPSUM TITLE</h3>
+                                            <div class="section4-titles-info">
+                                                <p class="section4-blog-data">By: John Doe</p>
+                                                <p class="section4-blog-data">17.12.2012</p>
+                                                <p class="section4-blog-data">3 comments</p>
+                                            </div>
+
                                         </div>
                                         <p class="section4-text">Lorem ipsum dolor sit amet consectetur adipisicing
                                             elitefa Quasi officia cum alias,
@@ -192,7 +233,7 @@
                             </div>
                         </div>
                         <div class="section4-testemunials">
-                            <h3>TESTIMONIALS</h3>
+                            <h2>TESTIMONIALS</h2>
                             <div class="section4-testemunials-flex">
                                 <article class="section4-testimonial">
                                     <div class="section4-first-quote"></div>
@@ -245,17 +286,18 @@
                             <div class="icon-facebook"></div>
                         </div>
                     </div>
-                    
+
                     <div class="footer-social-media-item">
                         <h3>TWITTER</h3>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deleniti illum quisquam error
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores deleniti illum quisquam
+                            error
                             aut impedit.</p>
-                            <p class="twitter-time">/23 minutes ago</p>
+                        <p class="twitter-time">/23 minutes ago</p>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit dolor sit amet.</p>
                         <div class="twitter-link-flex">
                             <a href="#" class="twitter-link">google.5k32sk</a>
                             <p class="twitter-time">/5 hours ago</p>
-                        </div>                        
+                        </div>
                     </div>
 
                     <div class="footer-social-media-item">
@@ -263,16 +305,19 @@
 
                         <div class="flickr-imgs-flex">
                             <figure class="flickr-img-container">
-                                <img src="./img/flickr/flickr (1).jpg" alt="Homem olhando o horizonte" class="flickr-img">
+                                <img src="./img/flickr/flickr (1).jpg" alt="Homem olhando o horizonte"
+                                    class="flickr-img">
                             </figure>
                             <figure class="flickr-img-container">
                                 <img src="./img/flickr/flickr (2).jpg" alt="Pessoa digitando" class="flickr-img">
                             </figure>
                             <figure class="flickr-img-container">
-                                <img src="./img/flickr/flickr (3).jpg" alt="Forma de coração ao por do sol" class="flickr-img">
+                                <img src="./img/flickr/flickr (3).jpg" alt="Forma de coração ao por do sol"
+                                    class="flickr-img">
                             </figure>
                             <figure class="flickr-img-container">
-                                <img src="./img/flickr/flickr (4).jpg" alt="Um guarda-chuva diferente no meio de outros" class="flickr-img">
+                                <img src="./img/flickr/flickr (4).jpg" alt="Um guarda-chuva diferente no meio de outros"
+                                    class="flickr-img">
                             </figure>
                             <figure class="flickr-img-container">
                                 <img src="./img/flickr/flickr (5).jpg" alt="Palmeira ao por do sol" class="flickr-img">
@@ -296,17 +341,19 @@
                                 <img src="./img/flickr/flickr (11).jpg" alt="Pessoa orando" class="flickr-img">
                             </figure>
                             <figure class="flickr-img-container">
-                                <img src="./img/flickr/flickr (12).jpg" alt="Uma criança segurando o planeta" class="flickr-img">
+                                <img src="./img/flickr/flickr (12).jpg" alt="Uma criança segurando o planeta"
+                                    class="flickr-img">
                             </figure>
                             <figure class="flickr-img-container">
                                 <img src="./img/flickr/flickr (13).jpg" alt="Casal juntos" class="flickr-img">
                             </figure>
                             <figure class="flickr-img-container">
-                                <img src="./img/flickr/flickr (14).jpg" alt="Pessoa em uma montanha ao por do sol" class="flickr-img">
+                                <img src="./img/flickr/flickr (14).jpg" alt="Pessoa em uma montanha ao por do sol"
+                                    class="flickr-img">
                             </figure>
                             <figure class="flickr-img-container">
                                 <img src="./img/flickr/flickr.jpg" alt="Guindaste ao por do sol" class="flickr-img">
-                            </figure>                            
+                            </figure>
                         </div>
                     </div>
 
@@ -336,18 +383,22 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </nav>
-    
+
                     <div class="footer-copyright">
-                        <p>Copyright FENCE 2012. All right reserved. Theme designed by <a href="#">Webbica Design</a></p>
+                        <p>Copyright FENCE 2012. All right reserved. Theme designed by <a href="#">Webbica Design</a>
+                        </p>
                     </div>
-                </div>                
+                </div>
             </div>
-            
+
         </div>
         <div class="global-overlay">
             <div class="ball-pointer"></div>
-        </div>        
+        </div>
     </footer>
 </body>
+<script src="./js/app.js">
+    var x = new App();
+</script>
 
 </html>

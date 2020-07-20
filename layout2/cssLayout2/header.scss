@@ -12,7 +12,7 @@
 }
 
 .nav-header {
-    width: 50%;
+    width: 55%;
 
     ul {
         display: flex;
@@ -28,14 +28,6 @@
         padding: 0 10px;
     }
 
-    .nav-checked {        
-        display: flex;
-        align-items: center;
-        background: $pattern-dark-gray;
-        height: 70px;
-        @include orange-top-boder;
-    }
-
     li:hover {
         display: flex;
         align-items: center;
@@ -45,9 +37,13 @@
     }
 }
 
+.hamburger-icon{
+    display: none;
+}
+
 @media (max-width: $pattern-break-page) {
     .nav-header {
-        width: 60%;
+        width: 60%;    
 
         li {
             font-size: 12px;
@@ -56,45 +52,65 @@
 }
 
 @media (max-width: $pattern-break-device) {
-    
+
     .main-header {
         height: auto;
     }
 
     .flex-header {
-        flex-direction: column;    
+        flex-direction: column;
     }
 
     .nav-header {
         width: 100%;
-    
+        display: flex;
+        align-items: flex-start;
+        flex-wrap: wrap;
+
         ul {
             flex-direction: column;
+            flex-basis: 100%;
         }
-    
+
         a {
             text-align: center;
-        }
-    
-        .nav-checked {
-            flex-direction: column;
-            justify-content: space-around;
         }
 
         li {
             width: 100%;
             text-align: center;
+            font-size: 14px;
         }
-    
-        li:hover {           
-            flex-direction: column;            
-            justify-content: space-around;          
+
+        li:hover {
+            flex-direction: column;
+            justify-content: space-around;
+            height:auto;
+        }
+
+        .nav-header-ul {            
+            display: none;
+            height: auto;
         }
     }
-}
 
-@media (max-width: 300px){
-    .header-imgs{
+    .hamburger-icon {
+        display: block;
+        height: 30px;
+        width: 34px;
+        border: 0;
+        background: url(../img/Hamburger_icon.svg);
+        background-position: center;
+        background-size: 25px;
+        background-repeat: no-repeat;
+    }
+    .hamburger-icon:focus{
+        outline: none;
+    }
+}  
+
+@media (max-width: 300px) {
+    .header-imgs {
         display: flex;
         align-items: center;
         flex-direction: column;

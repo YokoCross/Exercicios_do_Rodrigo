@@ -4,32 +4,30 @@
     font-family: 'Montserrat', sans-serif;
     overflow: hidden;
    
-    h3 {
+    h2 {
         margin-top: 1rem;
         font-size: 1.5rem;
         color: $pattern-light-gray;
     }
 
-    h4{
+    h3{
         font-size: .8rem;
         font-weight: bold;
         padding-left: .5rem;
     }
+}
 
-    h6{
-        color: $pattern-orange;        
-        font-size: .7rem;
-        font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    }
+.section-main-text {
+    overflow: hidden;
+    font-size: .7rem;
+    line-height: 1rem;
+    margin: 2rem 0;
+    color: $pattern-light-gray;
+    text-justify: distribute-all-lines;
+}
 
-    p {
-        overflow: hidden;
-        font-size: .7rem;
-        line-height: 1rem;
-        margin: 2rem 0;
-        color: $pattern-light-gray;
-        text-justify: distribute-all-lines;
-    }
+.section-main-article-spacing{
+    width: 22%;
 }
 
 @media (max-width: $pattern-break-device){
@@ -37,7 +35,16 @@
         flex-direction: column;
         align-items: center;
 
-        h3{
+        h2{
             text-align: center;}
+    }
+
+    .section-main-article-spacing{
+        width: 100%;
+    }
+
+    .section-main-text{
+        font-size: 1rem;
+        text-align: center;
     }
 }

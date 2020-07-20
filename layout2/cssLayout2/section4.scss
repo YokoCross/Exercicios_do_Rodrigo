@@ -1,9 +1,9 @@
-.section4-blogs{
+.section4-blogs {
     width: 48%;
     margin-bottom: 70px;
 }
 
-.section4-testemunials{
+.section4-testemunials {
     width: 48%;
     margin-bottom: 70px;
 }
@@ -26,9 +26,22 @@
     }
 }
 
+.section4-blog-data {
+    color: $pattern-orange;
+    font-size: .7rem;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .section4-titles {
     display: flex;
     justify-content: space-between;
+}
+
+.section4-titles-info {
+    display: flex;
+    justify-content: space-between;
+    width: 55%;
+    font-style: italic;
 }
 
 .section4-img1 {
@@ -54,12 +67,12 @@
     font-size: .7rem;
     padding-left: .5rem;
 
-    &:hover{
+    &:hover {
         color: $pattern-orange;
     }
 }
 
-.section4-testemunials-flex{
+.section4-testemunials-flex {
     display: flex;
     justify-content: space-between;
 }
@@ -99,25 +112,25 @@
     background-repeat: no-repeat;
 }
 
-.section4-jane-doe{
+.section4-jane-doe {
     display: flex;
     align-items: center;
     background: rgb(241, 240, 240);
     width: 100%;
 }
 
-.jane-doe-name{
+.jane-doe-name {
     font-size: .6rem;
     color: $pattern-gray;
     font-weight: bold;
 }
 
-.jane-doe-job{
+.jane-doe-job {
     font-size: .5rem;
     color: $pattern-gray;
 }
 
-.jane-doe-1{
+.jane-doe-1 {
     width: 40px;
     height: 40px;
     background-image: url("../img/jane-doe1.jpg");
@@ -126,7 +139,8 @@
     background-repeat: no-repeat;
     margin: 5px;
 }
-.jane-doe-2{
+
+.jane-doe-2 {
     width: 40px;
     height: 40px;
     background-image: url("../img/jane-doe2.jpg");
@@ -136,14 +150,59 @@
     margin: 5px;
 }
 
-@media (max-width:$pattern-break-device){
-    .section4-blogs{
+@media (max-width:$pattern-break-device) {
+    .section4-blogs {
         width: 95%;
         overflow: hidden;
     }
+
+    .section4-blog {
+        flex-direction: column;
+
+        .section4-text{
+            font-size: 1rem;
+        }
+    }
+
+    .section4-titles {
+        padding-top: 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section4-titles-info {
+        width: 100%;
+        padding: 10px 0;
+        justify-content: space-around;
+    }
+
+    .section4-blog {
+        .section4-text {
+            text-align: center;
+        }
+    }
+
+    .section4-link {
+       margin-top: 20px; 
+    }
     
-    .section4-testemunials{
-        width: 95%;        
+    .section4-testemunials-flex {
+        flex-direction: column;
+    }
+    
+    .section4-testimonial{
+        width: 100%;
+        .section4-testimonial-text{
+            font-size: 1rem;
+        }
+    }
+
+    .section4-testemunials {
+        width: 95%;
         overflow: hidden;
+    }
+
+    .section4-jane-doe{
+        width: 50%;
     }
 }

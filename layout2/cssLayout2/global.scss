@@ -2,7 +2,7 @@ $pattern-gray: #2a2f35;
 $pattern-dark-gray: #1f212d;
 $pattern-orange: #ff6c40;
 $pattern-light-gray:rgb(136, 136, 136);
-$pattern-font-family: Arial, Helvetica, sans-serif;
+$pattern-font-family: 'Montserrat', sans-serif;
 $pattern-break-page: 1200px;
 $pattern-break-device: 799px;
 
@@ -15,6 +15,19 @@ $pattern-break-device: 799px;
     *{
         box-sizing: border-box;
     }
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+
+.display-none {
+    display: none;
+}
+
+.display-flex{
+ display: flex;
 }
 
 .container{
@@ -36,24 +49,24 @@ $pattern-break-device: 799px;
     margin: 0 auto;
 }
 
-strong{
-    font-weight: bold;
-}
-
-em{
-    font-style: italic;
-}
-
 .global-background-articles{
     @include orange-top-boder;
     border-bottom: solid $pattern-orange;
     background: white;
-    box-shadow: 1px 0px 5px 0px rgba($color: #000000, $alpha: .5), -1px 0px 5px 0px rgba($color: #000000, $alpha: .5);
+    box-shadow: 1px 0px 5px 0px rgba($color: #000000, $alpha: .1), -1px 0px 5px 0px rgba($color: #000000, $alpha: .1);
+
+    @media (max-width:$pattern-break-device) {
+        box-shadow: 0, 0;
+    }
 }
 
 .global-overlay{
     position: relative;
-    top: -419px
+    top: -419px;
+
+    @media (max-width:$pattern-break-device) {
+        top: -400px;
+    }
 }
 
 .global-separator{
